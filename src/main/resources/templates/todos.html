@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Todo List</title>
+    <link rel="stylesheet" th:href="@{/css/main.css}"/>
+</head>
+
+<body>
+<nav>
+    <div class="nav-wrapper">
+        <a  href="#" class="logo">Todo Application</a>
+        <ul class="left">
+            <li><a th:href="@{/}">Home</a></li>
+            <li><a th:href="@{/todo/add}">Add todo</a></li>
+        </ul>
+    </div>
+</nav>
+<button id="themeToggle">Switch to Dark Theme</button>
+<div class="container">
+    <h1>TODO List:</h1>
+    <div>
+        <a href="/todo/add">Add Todo</a>
+    </div>
+    <div class="todo-container">
+        <div th:each="todo : ${todos}" class="todo-card">
+            <h2 th:text="${todo.title}">Title</h2>
+            <h2 th:text="${todo.description}">Description</h2>
+            <h2 th:text="${todo.isCompleted()}">isCompleted</h2>
+            <div class="todo-actions">
+
+<!--                action buttons-->
+                <a th:href="@{/todo/edit/{id}(id=${todo.id})}">Edit</a>
+                <a th:href="@{/todo/delete/{id}(id=${todo.id})}">Delete</a>
+                <a th:href="@{/todo/edit/{id}(id=${todo.id})}">Details</a>      <!--//redirect to todoEdit-->
+<!--                <a th:href="@{/todo/{id}(id=${todo.id})}">Details</a>-->    <!--//old version-->
+
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    document.getElementById("themeToggle").addEventListener("click", function () {
+        document.body.classList.toggle("dark-theme");
+
+    });
+</script>
+</html>
