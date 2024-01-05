@@ -2,7 +2,7 @@
     --background-color-light:#f4f4f4;
     --background-color-dark:#333;
     --text-color-light: #333;
-    --text-color-dark: #c7c7c7;
+    --text-color-dark: #171818;
 }
 .logo{
     display:flex;
@@ -126,7 +126,7 @@ form input[type="submit"]:hover, a.button{
     transition: transform 0.3s ease;
     background: #fff;
     border-radius: 10px;
-    box-shadow: 0px 2px 4px #888888;
+    box-shadow: 0px 2px 4px #08c4ac;
     margin-bottom: 20px;
     padding: 20px;
 }
@@ -164,16 +164,3 @@ form input[type="submit"]:hover, a.button{
         width: 100% !important;
     }
 }
-
-/*h2 {*/
-/*/ / surrounding with borders padding: 2 px;*/
-/*    border: 1px solid;*/
-/*    width: 200px;*/
-
-/*    !*variant 2*!*/
-/*    !*margin: 0 auto;*!*/
-/*    !*min-width: 320px;*!*/
-/*    !*max-width: 905px;*!*/
-/*    !*background: yellow;*!*/
-
-/*}*/
