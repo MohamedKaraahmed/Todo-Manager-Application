@@ -18,7 +18,7 @@ The Todo Application is a web-based task management system developed using the S
 6. **Persistence**: Leverages MySQL and JPA Repository for reliable data storage and retrieval.
 ## Technologies Used
 
-- Spring Framework
+- Spring Boot
 - Maven
 - MySQL Server
 - JPA Repository
