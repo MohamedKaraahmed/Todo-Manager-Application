@@ -13,6 +13,9 @@ The Todo Application is a web-based task management system developed using the S
 ## Add Todo View
 ![Project Logo](todoAppImages/AddTodoView.png)
 
+## Edit Todo View
+![Project Logo](todoAppImages/EditTodoView.png)
+
 ## Features
 
 1. **Add New Todos:** Users can add new tasks to the TODO list, specifying the task details.
