@@ -3,6 +3,10 @@
 ## Project Overview
 
 The Todo Application is a web-based task management system developed using the Spring Boot framework. It provides users with the ability to seamlessly organize their tasks through functionalities such as adding new todos, editing existing ones, and deleting tasks they have completed. The application employs a modern and user-friendly interface crafted with HTML and CSS, while Thymeleaf serves as the server-side templating engine.
+
+## Home Page View
+![Project Logo](todoAppImages/HomePageView.png)
+
 ## Features
 
 1. **Add New Todos:** Users can add new tasks to the TODO list, specifying the task details.
